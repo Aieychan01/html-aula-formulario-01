@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                margin: 50px;
+                
+            }
+            .genero {
+               margin-right: 30px;
+            }
+           
+          
+            #mora {
+                display: inline-block;
+            }
+            fieldset {
+                width: 40%;
+                
+            }
+
+            #nome {
+                width: 60%;
+            }
+
+            #numero {
+                width: 12%;
+            }
+            .dois {
+               
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .botao {
+               margin-left: 75%;
+                right: 30px;
+                width: 90px;
+            }
+          
+            .numero {
+               width: 14%; 
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form  action="" method="POST">
+                <fieldset>
+                    <legend>Formulário</legend> 
+                    <br>
+                    <Label for="nome">Nome completo: </Label> <input type="text" name="nome" id="nome" required>
+                    <br> <br> <br>
+                    <label for="data">Data de Nascimento: </label> <input type="date" name="data" id="data">
+                    <br> <br>
+                    <section class="dois">
+                        <div id="mora">
+                            <label for="mora">Selecione o estado em que mora:</label>
+                            <br> <br>
+                            <select name="estado" id="estado">
+                            <option value="estado">Estado</option>
+                            <option value="recife">Recife</option>
+                            <option value="jaboatão">Jaboatão</option>
+                            <option value="olinda">Olinda</option>
+                            </select>
+                        </div>                      
+                        <div class="genero">
+                            <label>Gênero:</label>
+                            <br>
+                            <input type="radio" name="feminino" id="feminino" required> 
+                            <label for="feminino">Feminino</label> 
+                            <br>
+                            <input type="radio" name="masculino" id="masculino" required> 
+                            <label for="masculino">Masculino</label>
+                            <br>
+                            <input type="radio" name="outro" id="outro" required> 
+                            <label for="outro">Outros</label>
+                        </div>
+                    </section>
+                    <br>
+                    
+                    <label class="numero" for="numero">5 + 4 é ?</label>
+                    <input type="text" name="numero" class="numero" required>
+                    <br>
+                   
+                     <input type="submit" class="botao" value="Salvar"> 
+                  
+                </fieldset>
+            
+            </form>
+        </section>
+    </body>
+</html>
